@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.PrincipalController"
+            prefWidth="400" prefHeight="200">
+
+    <children>
+        <Label text="Selecciona un Layout:"
+               layoutX="30" layoutY="40"/>
+
+        <ComboBox fx:id="comboLayouts"
+                  layoutX="30" layoutY="70"
+                  prefWidth="200"
+                  onAction="#cambiarLayout"/>
+
+        <Button text="Abrir ventana de componentes"
+                layoutX="30" layoutY="120"
+                onAction="#abrirVentana"/>
+    </children>
+
+</AnchorPane>
