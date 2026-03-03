@@ -26,7 +26,7 @@ public class PrincipalController {
                 "GridPane"
         );
 
-        comboLayouts.setValue("VBox"); // valor por defecto
+        comboLayouts.setValue("VBox");
     }
 
     @FXML
@@ -43,7 +43,7 @@ public class PrincipalController {
 
         componentesController = loader.getController();
 
-        // Aplicar layout automáticamente
+
         componentesController.cambiarLayout(comboLayouts.getValue());
     }
 
